@@ -70,3 +70,5 @@ tile_set = SubResource("TileSet_1ap6j")
 [node name="TileMapLayer2" type="TileMapLayer" parent="Tiles" unique_id=684684326]
 tile_map_data = PackedByteArray("AAAAACAAAAAMAAYAAAA=")
 tile_set = SubResource("TileSet_yq54j")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1919690836]
