@@ -60,6 +60,8 @@ sources/3 = SubResource("TileSetAtlasSource_1ap6j")
 position = Vector2(0, 341)
 scale = Vector2(1.5, 1.5)
 
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Jogador" unique_id=557177823]
+
 [node name="Tiles" type="Node2D" parent="." unique_id=296284063]
 
 [node name="terreno" type="TileMapLayer" parent="Tiles" unique_id=1417708794]
