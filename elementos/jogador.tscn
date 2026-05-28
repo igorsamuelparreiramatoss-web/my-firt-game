@@ -81,7 +81,7 @@ height = 40.0
 
 [node name="Jogador" type="CharacterBody2D" unique_id=2039721739]
 z_index = 1
-position = Vector2(15, 315)
+position = Vector2(34, 198)
 scale = Vector2(2, 2)
 script = ExtResource("1_vx4rn")
 metadata/_edit_group_ = true
@@ -95,6 +95,7 @@ autoplay = "parado"
 frame_progress = 0.45723996
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185762418]
+z_index = 1
 position = Vector2(35, -56)
 shape = SubResource("CapsuleShape2D_82b0t")
 
