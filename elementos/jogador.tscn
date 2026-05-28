@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://c5wlqgnt5227f"]
+
+[ext_resource type="Script" uid="uid://cv33y5d46ov32" path="res://script/jogador.gd" id="1_vx4rn"]
+[ext_resource type="Texture2D" uid="uid://b7ik3vybhh8hj" path="res://Sprites/Penguin SpriteSheet.png" id="2_82b0t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1p70"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eicu"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_li3jo"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7osve"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82b0t"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq1xy"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skaia"]
+atlas = ExtResource("2_82b0t")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1eicu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1p70")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eicu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_li3jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7osve")
+}],
+"loop": true,
+"name": &"andar",
+"speed": 8.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82b0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq1xy")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skaia")
+}],
+"loop": true,
+"name": &"pular",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_82b0t"]
+radius = 16.5
+height = 40.0
+
+[node name="Jogador" type="CharacterBody2D" unique_id=2039721739]
+z_index = 1
+position = Vector2(15, 315)
+scale = Vector2(2, 2)
+script = ExtResource("1_vx4rn")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=127017578]
+position = Vector2(33.25, -61.705074)
+scale = Vector2(1.5, 1.62)
+sprite_frames = SubResource("SpriteFrames_1eicu")
+animation = &"parado"
+autoplay = "parado"
+frame_progress = 0.45723996
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1185762418]
+position = Vector2(35, -56)
+shape = SubResource("CapsuleShape2D_82b0t")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=477169356]
+position = Vector2(38.5, -50)
+limit_left = 3
+limit_top = -9999717
+limit_right = 9999432
+limit_bottom = 361
+position_smoothing_enabled = true
