@@ -6,7 +6,7 @@
 [node name="jogo" type="Node2D" unique_id=1410903097]
 
 [node name="Jogador" parent="." unique_id=2039721739 instance=ExtResource("1_kxg5b")]
-position = Vector2(19, 299)
+position = Vector2(19, 140)
 scale = Vector2(1, 1)
 
 [node name="Tiles" type="Node2D" parent="." unique_id=296284063]
