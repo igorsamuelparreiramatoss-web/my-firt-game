@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b7rasc0blmdsw"]
+
+[ext_resource type="PackedScene" uid="uid://fkr2xcylf7yl" path="res://cenas/jogador.tscn" id="1_nrssq"]
+[ext_resource type="Texture2D" uid="uid://ynhunw578rjf" path="res://sprite/Free/City_Clean/1.Sky.png" id="2_grsdi"]
+[ext_resource type="Texture2D" uid="uid://dl6ewtmvveb45" path="res://sprite/Free/City_Clean/2.Buildings.png" id="3_2nxd7"]
+
+[node name="cidade" type="Node2D" unique_id=1845087866]
+
+[node name="Jogador" parent="." unique_id=2039721739 instance=ExtResource("1_nrssq")]
+position = Vector2(117, 171)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=383172628]
+
+[node name="1_sky" type="Sprite2D" parent="." unique_id=241918759]
+position = Vector2(163, 91)
+texture = ExtResource("2_grsdi")
+
+[node name="2_buildings" type="Sprite2D" parent="." unique_id=1872633245]
+position = Vector2(143, 117)
+texture = ExtResource("3_2nxd7")

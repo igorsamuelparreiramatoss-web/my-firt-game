@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://c5wlqgnt5227f"]
+[gd_scene format=3 uid="uid://fkr2xcylf7yl"]
 
 [ext_resource type="Script" uid="uid://cv33y5d46ov32" path="res://script/jogador.gd" id="1_vx4rn"]
 [ext_resource type="Texture2D" uid="uid://b7ik3vybhh8hj" path="res://Sprites/Penguin SpriteSheet.png" id="2_82b0t"]
@@ -97,9 +97,3 @@ frame_progress = 0.45723996
 z_index = 1
 position = Vector2(35, -56)
 shape = SubResource("CapsuleShape2D_82b0t")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=477169356]
-position = Vector2(38.5, -50)
-limit_left = 0
-limit_bottom = 180
-position_smoothing_enabled = true
